@@ -1,23 +1,37 @@
 .main_nav {
 	padding: 1em;
+	grid-column: 1 / span 2;
+
+	&__logo {
+		background: url('../images/logo.jpg') no-repeat center / 100% auto transparent;
+		display: block;
+		float: left;
+		width: 95px;
+		height: 88px;
+		text-indent: -10000000px;
+	}
 
 	&__list {
 		display: none;
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		text-align: center
+		text-align: center;
+		margin-right: 5em;
+		margin-top: 2em;
 	}
 
 	&__item {
-		padding: 1em;
-		&:last-child {
-			border-bottom: none;
-		}
+		padding: inherit;
 	}
 
 	&__link {
 		text-decoration: none;
+		color: $smoky-black;
+		font-family: $raleway;
+		font-weight: $bold;
+		font-size:$x-large;
+		padding-left:2em;
 	}
 
 	&__icon {

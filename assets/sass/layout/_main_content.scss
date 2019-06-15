@@ -1,0 +1,25 @@
+.main_content{
+	display: grid;
+	grid-template-columns: 75% 25%;
+  	grid-template-rows: 10vw 30vw 10vw;
+  	grid-gap: 1em;
+
+	&__title{
+		font-family:$old-standard;
+		font-size: $xxx-large;
+		text-transform:uppercase;
+		line-height: 20px;
+	}
+
+	&__bigimage{
+		background: url('../images/hero.jpg') no-repeat center / 100% auto transparent;
+		display: block;
+		float: left;
+	}
+
+	&__text{
+		p {
+			font-family: $raleway;
+		}
+	}
+}

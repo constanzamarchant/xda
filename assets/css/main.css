@@ -80,6 +80,15 @@
  */
 .main_nav {
   padding: 1em;
+  grid-column: 1/span 2;
+}
+.main_nav__logo {
+  background: url("../images/logo.jpg") no-repeat center/100% auto transparent;
+  display: block;
+  float: left;
+  width: 95px;
+  height: 88px;
+  text-indent: -10000000px;
 }
 .main_nav__list {
   display: none;
@@ -87,15 +96,19 @@
   padding: 0;
   margin: 0;
   text-align: center;
+  margin-right: 5em;
+  margin-top: 2em;
 }
 .main_nav__item {
-  padding: 1em;
-}
-.main_nav__item:last-child {
-  border-bottom: none;
+  padding: inherit;
 }
 .main_nav__link {
   text-decoration: none;
+  color: #0C0910;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 2em;
 }
 .main_nav__icon {
   text-align: right;
@@ -119,6 +132,27 @@
     border-bottom: none;
   }
 }
+.main_content {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 10vw 30vw 10vw;
+  grid-gap: 1em;
+}
+.main_content__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.main_content__bigimage {
+  background: url("../images/hero.jpg") no-repeat center/100% auto transparent;
+  display: block;
+  float: left;
+}
+.main_content__text p {
+  font-family: "Raleway", sans-serif;
+}
+
 /*
  * 
  * Esta carpeta fue creada para componentes o módulos pequeños como por ejemplo: 
