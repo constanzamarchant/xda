@@ -1,4 +1,4 @@
-footer{
+.footer{
 	background-color:$smoky-black;
 	color: $white;
 	
@@ -7,11 +7,38 @@ footer{
 		font-family: $old-standard;
 		font-size: $xx-large;
 	}
-
 	
-	input[type=text]{
-		display: block;
-		font-family: $old-standard;
-		font-size: $medium;
+	p{
+			display: block;
+			font-family: $old-standard;
+			font-size: $medium;
+		}
+	
+	&__input{
+		width: 28%;
+		padding-left: 1rem;
+	}
+
+	&__submit{
+		margin-top: 5em;
+		background-color: transparent;
+		border: none;
+		font-family:$old-standard;
+		font-size:$large;
+		font-weight: $bold;
+		transform: rotate(90deg);
+
+		&:hover{
+			border: none;
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+	.footer{
+		&__input{
+			width: 85%;
+			padding: 1rem;
+		}
 	}
 }

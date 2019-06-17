@@ -142,7 +142,7 @@ img {
 }
 .main_content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   align-items: start;
 }
@@ -156,7 +156,7 @@ img {
   width: 50%;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  line-height: 35px;
+  line-height: 30px;
   color: #646266;
 }
 .main_content__button {
@@ -180,32 +180,151 @@ img {
 }
 
 .item-2 {
-  grid-column: 2/2;
+  grid-column: 3/3;
   grid-row: 1/3;
 }
 
 .item-3 {
-  padding-left: 3rem;
-  padding-bottom: 3rem;
-  margin-right: 3rem;
+  padding-left: 5rem;
+  padding-bottom: 4rem;
   grid-column: 1/2;
   grid-row: 2/3;
 }
 
-footer {
+.item-4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+@media all and (max-width: 576px) {
+  .main_content {
+    display: inline-grid;
+    grid-template-columns: 1fr 0.1fr;
+    grid-template-rows: auto;
+    align-items: start;
+  }
+  .main_content__title {
+    font-size: 30px;
+  }
+  .main_content__text p {
+    width: 80%;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #646266;
+  }
+
+  .item-1 {
+    margin-left: 2em;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .item-2 {
+    margin-top: 3rem;
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+
+  .item-3 {
+    padding: 1em;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .item-4 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+@media all and (max-width: 992px) {
+  .main_content {
+    display: inline-grid;
+    grid-template-columns: 1fr 0.1fr;
+    grid-template-rows: auto;
+    align-items: start;
+  }
+  .main_content__title {
+    font-size: 30px;
+  }
+  .main_content__text p {
+    width: 80%;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #646266;
+  }
+  .main_content__bigimage {
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  img {
+    display: none;
+  }
+
+  .item-1 {
+    margin-left: 2em;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .item-2 {
+    margin-top: 3rem;
+    grid-column: 1/3;
+    grid-row: 1;
+    height: 80vh;
+  }
+
+  .item-3 {
+    padding: 1em;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .item-4 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+.footer {
   background-color: #0C0910;
   color: #ffffff;
 }
-footer h3 {
+.footer h3 {
   font-family: "Old Standard TT", serif;
   font-size: 30px;
 }
-footer input[type=text] {
+.footer p {
   display: block;
   font-family: "Old Standard TT", serif;
   font-size: 16px;
 }
+.footer__input {
+  width: 28%;
+  padding-left: 1rem;
+}
+.footer__submit {
+  margin-top: 5em;
+  background-color: transparent;
+  border: none;
+  font-family: "Old Standard TT", serif;
+  font-size: 18px;
+  font-weight: 700;
+  transform: rotate(90deg);
+}
+.footer__submit:hover {
+  border: none;
+}
 
+@media all and (max-width: 576px) {
+  .footer__input {
+    width: 85%;
+    padding: 1rem;
+  }
+}
 /*
  * 
  * Esta carpeta fue creada para componentes o módulos pequeños como por ejemplo: 
