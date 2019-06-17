@@ -1,0 +1,17 @@
+footer{
+	background-color:$smoky-black;
+	color: $white;
+	
+
+	h3{
+		font-family: $old-standard;
+		font-size: $xx-large;
+	}
+
+	
+	input[type=text]{
+		display: block;
+		font-family: $old-standard;
+		font-size: $medium;
+	}
+}
